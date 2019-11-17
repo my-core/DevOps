@@ -1,4 +1,4 @@
-
+﻿
 Docker For Windows下安装Kubernetes
 
 1-Docker for Windows的安装
@@ -23,3 +23,10 @@ Docker For Windows下安装Kubernetes
  （3）执行【docker images】查看是否导入成功
  
 5-打开Docker for Windows -> Settings -> Kubernetes,勾选开启项进行安装
+
+
+
+Hyper-V虚拟机、k8s
+https://blog.csdn.net/xuanalex/article/details/79943206
+https://blog.csdn.net/qq_37774171/article/details/86751449
+https://www.cnblogs.com/xyy2019/p/11799526.html
