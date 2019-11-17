@@ -27,6 +27,7 @@ Docker For Windows下安装Kubernetes
 
 
 Hyper-V虚拟机、k8s
+https://blog.csdn.net/itcxx/article/details/82290858
 https://blog.csdn.net/xuanalex/article/details/79943206
 https://blog.csdn.net/qq_37774171/article/details/86751449
 https://www.cnblogs.com/xyy2019/p/11799526.html
