@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-pod
+  labels:
+    app: test-app
+spec:
+  containers:
+    - name: aspnetapp
+      image: mcr.microsoft.com/dotnet/core/samples:aspnetapp
+      ports:
+        - containerPort: 80 # 定义容器监听的端口
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-deployment
+  labels:
+    app: test-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-app
+  template:
+    metadata:
+      labels:
+        app: test-app
+    spec:
+      containers:
+      - name: aspnetapp
+        image: mcr.microsoft.com/dotnet/core/samples:aspnetapp
+        ports:
+        - containerPort: 80
